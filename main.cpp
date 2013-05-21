@@ -20,11 +20,11 @@ string Int2String(int number);
 
 int main(int argc, char **argv)
 {
-  vector<int> argumenty;//Vector argumentów
+  vector<int> argumenty;
 	vector<int> vVectorRoboczy;
 	vector<int> vVectorPoteg;
-	int max; //Największy argument
-	argumenty.reserve(argc); //Zarezerwowanie miejsca na argumenty
+	int max; 
+	argumenty.reserve(argc);
 
 	for(int i = 1; i < argc; ++i) {
 		try {
@@ -36,7 +36,7 @@ int main(int argc, char **argv)
 	    }
 	}
 
-	max = *(max_element(argumenty.begin(), argumenty.end())); //Szukanie największego argumentu
+	max = *(max_element(argumenty.begin(), argumenty.end()));
 	cout << "Przed sitem"<<endl;
 	Sito cSito(max);
 
