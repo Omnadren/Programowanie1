@@ -1,0 +1,15 @@
+/**
+ * 
+ */
+
+/**
+ * @author Adam Szerszeń
+ * klasa wyjątku który jest wyrzucany przez drzewo
+ */
+@SuppressWarnings("serial")
+public class ThreeException extends Throwable {
+  ThreeException() {}
+	ThreeException(String msg) {
+		super(msg);
+	}
+}
